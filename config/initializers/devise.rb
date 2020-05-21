@@ -1,7 +1,7 @@
 require 'omniauth-linkedin'
 
 Devise.setup do |config|
-  config.omniauth :linkedin, "APP_ID", "APP_SECRET"
+  config.omniauth :linkedin, ENV["LINKEDIN_CLIENT_ID"], ENV["LINKEDIN_CLIENT_SECRET"]
   config.mailer_sender = 'risojackson@gmail.com'
   require 'devise/orm/active_record'
   config.case_insensitive_keys = [:email]

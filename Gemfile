@@ -14,6 +14,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-linkedin'
+gem 'omniauth-oauth2', '~> 1.3.1'
 gem 'env'
 
 group :development, :test do
