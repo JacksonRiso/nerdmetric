@@ -15,9 +15,9 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-linkedin'
 gem 'omniauth-oauth2', '~> 1.3.1'
-gem 'env'
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
